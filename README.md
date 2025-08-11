@@ -9,7 +9,7 @@ Preferences Activity with KSU Web-UI.
 
 ## Instructions
 ### KernelSU & Apatch
-- KSU WebUI
+- WebUI button to open Activity
 
 ### Magisk
 - Action button to open Activity
