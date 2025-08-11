@@ -6,3 +6,10 @@ Preferences Activity with KSU Web-UI.
 
 ## Requirements
 - [Leica camera](https://devuploads.com/users/ItzDFPlyer) module installed
+
+## Instructions
+### KernelSU & Apatch
+- KSU WebUI
+
+### Magisk
+- Action button to open Activity
