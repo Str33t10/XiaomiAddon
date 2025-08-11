@@ -1,4 +1,4 @@
-<h2 align="center">Xiaomi/Leica Addon</h2>
+<h2 align="center">Xiaomi/Leica Camera Preferences</h2>
 <p align="center">
   A webui module for xiaomi/leica camera preferences.
   </br>
