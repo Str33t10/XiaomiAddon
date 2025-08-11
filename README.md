@@ -13,3 +13,6 @@ Preferences Activity with KSU Web-UI.
 
 ### Magisk
 - Action button to open Activity
+
+## Links
+[Download](https://github.com/backslashxx/mountify/releases)
