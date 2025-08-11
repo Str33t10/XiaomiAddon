@@ -11,9 +11,3 @@
 > This module currently focuses to run leica camera preferences from action / web-ui button
 
 #
-
-## LICENSE
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-
