@@ -5,10 +5,8 @@ Preferences Activity with KSU Web-UI.
 > This module currently focuses to run leica camera preferences from action / web-ui button.
 
 ## Requirements
-- [Tricky store]([https://github.com/5ec1cff/TrickyStore](https://devuploads.com/users/ItzDFPlyer)) module installed
-- 
+- [Tricky store](https://devuploads.com/users/ItzDFPlyer) module installed
 
-- [Leica camera]([])) module installed
 
 
 
@@ -19,4 +17,5 @@ Preferences Activity with KSU Web-UI.
 
 
 #
+
 
