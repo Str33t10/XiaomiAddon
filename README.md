@@ -1,6 +1,6 @@
-<h2 align="center">Leica Camera Preferences</h2>
+<h2 align="center">Xiaomi Addon - Leica Camera Preferences</h2>
 <p align="center">
-  A action / webui module for leica camera module.
+  Preferences Activity with KernelSU Web-UI.
   </br>
   </br>
   <a href="https://opensource.org/licenses/MIT">
@@ -18,3 +18,4 @@
 ## LICENSE
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
