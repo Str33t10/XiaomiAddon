@@ -33,11 +33,11 @@ function toast(message) {
 document.addEventListener('DOMContentLoaded', async () => {
      exec('am start -n com.android.camera/.CameraPreferenceActivity')
     .then(() => {
-      toast('Xiaomi Camera Preference')
+      toast('Leica camera Preference')
       console.log('Camera is ready!')
       })
     .catch(err => {
-      toast('Xiaomi Camera not found')
+      toast('Leica camera not found')
       console.log('Camera is not ready!')
       console.error(err)
     })
