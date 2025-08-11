@@ -3,4 +3,4 @@ name=Xiaomi Addon
 version=v1.0 (2025)
 versionCode=2025
 author=Str33t10
-description=An addon that adding Action / WebUi for Xiaomi Camera
+description=An addon that adding Action / WebUi to open camera preference activity
