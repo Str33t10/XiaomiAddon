@@ -14,5 +14,5 @@ Preferences Activity with KSU Web-UI.
 ### Magisk
 - Action button to open Activity
 
-## Links
-[Download](https://github.com/backslashxx/mountify/releases)
+# Links
+[Download](https://github.com/Str33t10/XiaomiAddon/releases)
