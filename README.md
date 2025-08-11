@@ -1,6 +1,6 @@
 <h2 align="center">Xiaomi/Leica Camera Preferences</h2>
 <p align="center">
-  A webui module for xiaomi/leica camera preferences.
+  A action / webui module for xiaomi/leica camera module.
   </br>
   </br>
   <a href="https://opensource.org/licenses/MIT">
@@ -11,7 +11,7 @@
 </p>
 
 > [!NOTE]
-> This module currently focuses to run camera preferences from web ui..
+> This module currently focuses to run camera preferences from action / web-ui.
 > Updates will gradually implements changes and fixes.
 
 #
