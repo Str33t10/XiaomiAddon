@@ -1,7 +1,6 @@
 SKIPUNZIP=0
 DEBUG=false
 
-MODID=`grep_prop id $TMPDIR/module.prop`
 if [ ! -d "/data/adb/modules/xiaomicamera" ]; then
     ui_print " "
     ui_print "! Xiaomi module not found"
@@ -28,16 +27,20 @@ else
 fi
 
 # Cleanup left over
+MODID=`grep_prop id $TMPDIR/module.prop`
 NEW_MODID=".xiaomiaddon"
 [ -d "/data/adb/modules/$NEW_MODID" ] && rm -rf "/data/adb/modules/$NEW_MODID"
 if [ "$ACTION" = "false" ]; then
         rm -f "$MODPATH/action.sh"
         NEW_MODID="$MODID"
 fi
-
 cp "$TMPDIR/module.prop" "$MODPATH/module.prop.bak"
 
 ui_print " "
+
 sleep 1
+
+ui_print "- Installation completed successfully!"
+ui_print " "
 
 # EOF
