@@ -1,10 +1,9 @@
-CAM_MODPATH="/data/adb/modules/xiaomicamera"
+rm -rf "/data/adb/modules/.xiaomiaddon"
 
 # Remove residue.
-rm -rf "/data/adb/modules/.xiaomiaddon"
-if [ -d "$CAM_MODPATH" ]; then
-    [ -L "$CAM_MODPATH/action.sh" ] && rm -f "$CAM_MODPATH/action.sh"
-    [ -L "$CAM_MODPATH/webroot" ] && rm -f "$CAM_MODPATH/webroot"
+if [ -d "/data/adb/modules/xiaomicamera" ]; then
+    [ -L "/data/adb/modules/xiaomicamera/action.sh" ] && rm -f "/data/adb/modules/xiaomicamera/action.sh"
+    [ -L "/data/adb/modules/xiaomicamera/webroot" ] && rm -f "/data/adb/modules/xiaomicamera/webroot"
 fi
 
 # EOF
