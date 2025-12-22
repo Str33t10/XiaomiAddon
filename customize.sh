@@ -15,7 +15,7 @@ elif [ "$MAGISK_VER_CODE" ]; then
     ui_print "- Magisk: $MAGISK_VER│$MAGISK_VER_CODE"
 else
     ui_print " "
-    ui_print "! unsupport mode"
+    ui_print "! mode not support"
     abort " "
 fi
 
