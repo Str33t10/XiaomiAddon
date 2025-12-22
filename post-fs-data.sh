@@ -16,7 +16,7 @@ while [ -z "$(ls -A /data/adb/modules/)" ]; do
     sleep 1
 done
 
-[ -L "$CAM_MODPATH/webroot" ] && rm -f "$CAM_MODPATH/webroot"
 [ -L "$CAM_MODPATH/action.sh" ] && rm -f "$CAM_MODPATH/action.sh"
+[ -L "$CAM_MODPATH/webroot" ] && rm -f "$CAM_MODPATH/webroot"
 
 #EOF
