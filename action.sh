@@ -6,6 +6,6 @@ if [ -z "$TMPDIR" ] && [ ! -z "$MAGISKTMP" ]; then
       exit 0
    }
 fi
-exit 0
+exit $?
 
 #EOF
