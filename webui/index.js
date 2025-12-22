@@ -31,14 +31,14 @@ function toast(message) {
 
 // Initial load
 document.addEventListener('DOMContentLoaded', async () => {
-     exec('am start -n com.android.camera/.CameraPreferenceActivity')
+     exec('am start -n com.android.camera/.CameraPreferenceActivity -e id xiaomicamera')
     .then(() => {
       toast('Camera Preference')
       console.log('Camera is ready!')
       })
     .catch(err => {
-      toast('Camera not found')
-      console.log('Camera is not ready!')
+      toast('Camera Launcher')
+      console.log('Camera not ready!')
       console.error(err)
     })
 });
