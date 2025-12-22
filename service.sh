@@ -1,18 +1,18 @@
 MODPATH=${0%/*}
-PATH=/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:$PATH
 
 # Hide module from magisk manager
-ADD_MODPATH="/data/adb/modules/.xiaomiaddon"
+PATH=/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:$PATH
+ADDON_MODPATH="/data/adb/modules/.xiaomiaddon"
 if [ -f "$MODPATH/action.sh" ]; then
-    if [ "$MODPATH" != "$ADD_MODPATH" ]; then
-        rm -rf "$ADD_MODPATH"
-        mkdir -p "$ADD_MODPATH"
-        busybox chcon --reference="$MODPATH" "$ADD_MODPATH"
-        cp -af "$MODPATH/." "$ADD_MODPATH/"
+    if [ "$MODPATH" != "$ADDON_MODPATH" ]; then
+        rm -rf "$ADDON_MODPATH"
+        mkdir -p "$ADDON_MODPATH"
+        busybox chcon --reference="$MODPATH" "$ADDON_MODPATH"
+        cp -af "$MODPATH/." "$ADDON_MODPATH/"
     fi
-    MODPATH="$ADD_MODPATH"
+    MODPATH="$ADDON_MODPATH"
 else
-    [ -d "$ADD_MODPATH" ] && rm -rf "$ADD_MODPATH"
+    [ -d "$ADDON_MODPATH" ] && rm -rf "$ADDON_MODPATH"
 fi
 
 # Hide module from other manager
