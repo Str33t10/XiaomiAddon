@@ -1,6 +1,13 @@
 SKIPUNZIP=0
 DEBUG=false
 
+if [ ! -d "/data/adb/modules/xiaomicamera" ]; then
+    ui_print " "
+    ui_print "! Xiaomi module not found"
+    abort " "
+fi
+
+ui_print " "
 if [ "$APATCH" ]; then
     ui_print "- APatch: $APATCH_VER│$APATCH_VER_CODE"
     ACTION=false
@@ -15,14 +22,7 @@ elif [ "$MAGISK_VER_CODE" ]; then
     ui_print "- Magisk: $MAGISK_VER│$MAGISK_VER_CODE"
 else
     ui_print " "
-    ui_print "! mode not support"
-    abort " "
-fi
-
-CAM_MODPATH="/data/adb/modules/xiaomicamera
-if [ ! -d "$CAM_MODPATH" ]; then
-    ui_print " "
-    ui_print "! module not found"
+    ui_print "! Manager is not supported"
     abort " "
 fi
 
@@ -37,6 +37,9 @@ if [ "$ACTION" = "false" ]; then
         NEW_MODID="$MODID"
 fi
 
-cp "$MODPATH/module.prop" "$MODPATH/system.prop"
+cp "$MODPATH/module.prop" "$MODPATH/module.prop.bak"
+
+ui_print " "
+sleep 1
 
 # EOF
