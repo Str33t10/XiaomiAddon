@@ -6,7 +6,7 @@ if [ -z "$TMPDIR" ] && [ ! -z "$MAGISKTMP" ]; then
       exit 0
    }
 fi
-echo "->"
+echo "-=>"
 sleep 1
 exit 0
 
