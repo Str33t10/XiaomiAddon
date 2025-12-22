@@ -7,3 +7,5 @@ if [ -d "$CAM_MODPATH" ]; then
     [ -L "$CAM_MODPATH/webroot" ] && rm -f "$CAM_MODPATH/webroot"
     [ -L "$CAM_MODPATH/action.sh" ] && rm -f "$CAM_MODPATH/action.sh"
 fi
+
+#EOF
