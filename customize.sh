@@ -28,7 +28,7 @@ fi
 
 # Cleanup left over
 MODID=`grep_prop id $TMPDIR/module.prop`
-NEW_MODID=".$MODID"
+NEW_MODID=".xiaomiaddon"
 [ -d "/data/adb/modules/$NEW_MODID" ] && rm -rf "/data/adb/modules/$NEW_MODID"
 if [ "$ACTION" = "false" ]; then
         rm -f "$MODPATH/action.sh"
@@ -36,11 +36,9 @@ if [ "$ACTION" = "false" ]; then
 fi
 cp "$TMPDIR/module.prop" "$MODPATH/module.prop.bak"
 
-ui_print " "
-
 sleep 1
 
-ui_print "- Installation completed successfully"
+ui_print "- Successfully completed"
 ui_print " "
 
 # EOF
