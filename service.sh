@@ -1,10 +1,10 @@
-PATH=/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:$PATH
-
 MODPATH=${0%/*}
+
 CAM_MODPATH="/data/adb/modules/xiaomicamera"
 ADD_MODPATH="/data/adb/modules/.xiaomiaddon"
 
 # Hide module from magisk manager
+PATH=/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:$PATH
 if [ -f "$MODPATH/action.sh" ]; then
     if [ "$MODPATH" != "$ADD_MODPATH" ]; then
         rm -rf "$ADD_MODPATH"
