@@ -1,6 +1,9 @@
 PATH=/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:$PATH
 MODPATH=${0%/*}
 
+# Handle sensitive prop in background
+sh "$MODPATH/prop.sh" &
+
 # Hide module from magisk manager
 ADDON_MODPATH="/data/adb/modules/.xiaomiaddon"
 if [ -f "$MODPATH/action.sh" ]; then
