@@ -1,5 +1,4 @@
 MODPATH=${0%/*}
-
 CAM_MODPATH="/data/adb/modules/xiaomicamera"
 
 # Symlink action.sh
