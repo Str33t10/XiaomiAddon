@@ -1,4 +1,4 @@
-MODPATH=${0%/*}
+#!/bin/sh
 
 if [ -z "$TMPDIR" ] && [ ! -z "$MAGISKTMP" ]; then
    pm path com.android.camera >/dev/null 2>&1 && {
