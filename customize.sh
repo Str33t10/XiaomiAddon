@@ -1,10 +1,6 @@
 SKIPUNZIP=0
 DEBUG=false
 
-CAM_MODPATH="/data/adb/modules/xiaomicamera"
-MODID=`grep_prop id $TMPDIR/module.prop`
-NEW_MODID=".xiaomiaddon"
-
 if [ "$APATCH" ]; then
     ui_print "- APatch: $APATCH_VER│$APATCH_VER_CODE"
     ACTION=false
@@ -19,15 +15,19 @@ elif [ "$MAGISK_VER_CODE" ]; then
     ui_print "- Magisk: $MAGISK_VER│$MAGISK_VER_CODE"
 else
     ui_print " "
-    ui_print "! unsupport recovery"
+    ui_print "! unsupport mode"
     abort " "
 fi
 
+CAM_MODPATH="/data/adb/modules/xiaomicamera
 if [ ! -d "$CAM_MODPATH" ]; then
     ui_print " "
     ui_print "! module not found"
     abort " "
 fi
+
+MODID=`grep_prop id $TMPDIR/module.prop`
+NEW_MODID=.xiaomiaddon
 
 # Cleanup left over
 [ -d "/data/adb/modules/$NEW_MODID" ] && rm -rf "/data/adb/modules/$NEW_MODID"
@@ -39,4 +39,4 @@ fi
 
 cp "$MODPATH/module.prop" "$MODPATH/system.prop"
 
-#EOF
+# EOF
