@@ -1,6 +1,6 @@
 MODPATH=${0%/*}
-CAM_MODPATH="/data/adb/modules/xiaomicamera"
 
+CAM_MODPATH="/data/adb/modules/xiaomicamera"
 if [ ! -d "$CAM_MODPATH" ] || [ -f "$CAM_MODPATH/remove" ]; then
     if [ -f "$MODPATH/action.sh" ]; then
         [ -d "/data/adb/modules/xiaomiaddon" ] && rm -rf "/data/adb/modules/xiaomiaddon"
@@ -19,4 +19,4 @@ done
 [ -L "$CAM_MODPATH/action.sh" ] && rm -f "$CAM_MODPATH/action.sh"
 [ -L "$CAM_MODPATH/webroot" ] && rm -f "$CAM_MODPATH/webroot"
 
-#EOF
+# EOF
