@@ -27,7 +27,7 @@ if [ ! -d "$CAM_MODPATH" ]; then
 fi
 
 MODID=`grep_prop id $TMPDIR/module.prop`
-NEW_MODID=.xiaomiaddon
+NEW_MODID=".xiaomiaddon"
 
 # Cleanup left over
 [ -d "/data/adb/modules/$NEW_MODID" ] && rm -rf "/data/adb/modules/$NEW_MODID"
