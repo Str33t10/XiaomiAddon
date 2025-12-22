@@ -8,4 +8,4 @@ if [ -z "$TMPDIR" ] && [ ! -z "$MAGISKTMP" ]; then
 fi
 exit $?
 
-#EOF
+# EOF
