@@ -31,7 +31,7 @@ function toast(message) {
 
 // Initial load
 document.addEventListener('DOMContentLoaded', async () => {
-     exec('am start -n com.android.camera/.CameraPreferenceActivity -e id xiaomicamera')
+     exec('am start -n com.android.camera/.CameraPreferenceActivity')
     .then(() => {
       toast('Camera Preference')
       console.log('Camera is ready!')
@@ -42,3 +42,5 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error(err)
     })
 });
+
+// EOF
