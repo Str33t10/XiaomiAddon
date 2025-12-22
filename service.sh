@@ -33,3 +33,5 @@ until [ "$(getprop sys.boot_completed)" = "1" ]; do
 done
 
 [ -f "$MODPATH/action.sh" ] && rm -rf "/data/adb/modules/xiaomiaddon"
+
+#EOF
