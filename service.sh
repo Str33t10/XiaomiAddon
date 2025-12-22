@@ -1,5 +1,5 @@
-PATH=/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:$PATH
 MODPATH=${0%/*}
+PATH=/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:$PATH
 
 # Hide module from magisk manager
 ADD_MODPATH="/data/adb/modules/.xiaomiaddon"
