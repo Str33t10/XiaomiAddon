@@ -35,4 +35,4 @@ done
 
 [ -f "$MODPATH/action.sh" ] && rm -rf "/data/adb/modules/xiaomiaddon"
 
-#EOF
+# EOF
