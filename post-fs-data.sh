@@ -11,7 +11,7 @@ if [ ! -d "$CAM_MODPATH" ] || [ -f "$CAM_MODPATH/remove" ]; then
         cp -rf "$MODPATH" "/data/adb/modules/xiaomiaddon"
         touch "/data/adb/modules/xiaomiaddon/remove"
     else
-        mv -f "$MODPATH/system.prop" "$MODPATH/module.prop"
+        mv -f "$MODPATH/module.prop.bak" "$MODPATH/module.prop"
         touch "$MODPATH/remove"
     fi
 fi
