@@ -6,8 +6,8 @@ if [ -z "$TMPDIR" ] && [ ! -z "$MAGISKTMP" ]; then
       exit 0
    }
 fi
-echo ">>>"
-sleep 1
-exit 0
+if [ -z "$MMRL" ] && [ -z "$KSU_NEXT" ] && { [ "$KSU" = "true" ] || [ "$APATCH" = "true" ]; }; then
+   sleep 1
+fi
 
 # EOF
